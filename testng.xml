@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BDD.Suite" verbose="2" parallel="none">
+
+	<test name="Group">
+		<classes>
+			<class name="com.yammer.cucumber.tests.GroupBDDTests" />
+		</classes>
+	</test>
+
+	<test name="Post">
+		<classes>
+			<class name="com.yammer.cucumber.tests.PostBDDTests" />
+		</classes>
+	</test>
+
+	<test name="Comment">
+		<classes>
+			<class name="com.yammer.cucumber.tests.CommentBDDTests" />
+		</classes>
+	</test>
+
+	<test name="Message">
+		<classes>
+			<class name="com.yammer.cucumber.tests.MessageBDDTests" />
+		</classes>
+	</test>
+
+	<test name="Bookmark">
+		<classes>
+			<class name="com.yammer.cucumber.tests.BookmarkBDDTests" />
+		</classes>
+	</test>
+
+	<test name="Search">
+		<classes>
+			<class name="com.yammer.cucumber.tests.SearchBDDTests" />
+		</classes>
+	</test>
+
+</suite> 
