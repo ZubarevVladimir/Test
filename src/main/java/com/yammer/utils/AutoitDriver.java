@@ -34,7 +34,7 @@ public class AutoitDriver {
       autoItCapabilities.setCapability("browserName", "AutoIt");//10.6.132.40
       try {
         autoitDriver =
-            new RemoteWebDriver(new URL("http://" + "10.6.132.40" +
+            new RemoteWebDriver(new URL("http://" + "10.6.102.19" +
                 ":4723/wd/hub"), autoItCapabilities);
         System.out.println("AUTOIT -> "+autoitDriver);
       } catch (MalformedURLException e) {

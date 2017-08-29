@@ -39,8 +39,9 @@ public class SeleniumIntegrationTest {
 		webDriver.get("http://www.httpwatch.com/httpgallery/authentication/");
 		Thread.sleep(1000);
 		webDriver.findElement(By.id("displayImage")).click(); // trigger the popup
-		Thread.sleep(200); // wait for popup to appear
+		Thread.sleep(1000); // wait for popup to appear
 		autoitDriver.switchTo().window("Authentication Required");
+    Thread.sleep(1000);
 		new Actions(autoitDriver).sendKeys("httpwatch{TAB}AutoItDriverServerAndSeleniumIntegrationDemo{TAB}").build().perform();
     Thread.sleep(5000);
     new Actions(autoitDriver).sendKeys("{ENTER}").build().perform();
