@@ -22,9 +22,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class AutoitDriver {
 
-  private static WebDriver autoitDriver;
+  private static RemoteWebDriver autoitDriver;
 
-  public static synchronized WebDriver getAutoitDriver() {
+  public static synchronized RemoteWebDriver getAutoitDriver() {
     if (autoitDriver != null) {
       return autoitDriver;
     } else {
