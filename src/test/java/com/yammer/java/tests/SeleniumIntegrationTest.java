@@ -50,8 +50,10 @@ public class SeleniumIntegrationTest {
 		webDriver.findElement(By.id("displayImage")).click(); // trigger the popup
 		Thread.sleep(200); // wait for popup to appear
 		autoitDriver.switchTo().window("Authentication Required");
-		new Actions(autoitDriver).sendKeys("httpwatch{TAB}AutoItDriverServerAndSeleniumIntegrationDemo{TAB}{ENTER}").build().perform();
-		Thread.sleep(5000);
+		new Actions(autoitDriver).sendKeys("httpwatch{TAB}AutoItDriverServerAndSeleniumIntegrationDemo{TAB}").build().perform();
+    Thread.sleep(5000);
+    new Actions(autoitDriver).sendKeys("{ENTER}").build().perform();
+
 		
 		
 		// below is some demo code which should be adjusted for exact test data and site content
