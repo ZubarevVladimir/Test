@@ -23,17 +23,8 @@ public class SeleniumIntegrationTest {
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 	  String hubHost = "localhost";
 		webDriver = new ChromeDriver();
-		
-		/*String sessionId = ((RemoteWebDriver) webDriver).getSessionId().toString();
-		String nodeHost = GridInfoExtracter.getHostNameAndPort(hubHost, 4444, sessionId)[0];
-		System.out.println("Extracted hostname: "+nodeHost);
-		autoItCapabilities = new DesiredCapabilities();
-		autoItCapabilities.setCapability("browserName", "AutoIt");
-		autoitDriver = new RemoteWebDriver(new URL("http://"+nodeHost+":4723/wd/hub" ), autoItCapabilities);*/
     autoitDriver = AutoitDriver.getAutoitDriver();
 
-//		IP address can be specified explicitly, as shown below
-//		autoitDriver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub" ), autoItCapabilities);
 	}
 
 	@After
