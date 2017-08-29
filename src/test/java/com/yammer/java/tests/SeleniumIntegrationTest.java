@@ -36,6 +36,7 @@ public class SeleniumIntegrationTest {
 	@Test
 	public void test() throws Exception {
 		// ### HTTP authentication dialog popup demo ###
+    autoitDriver.switchTo().window("Google Chrome");
     new Actions(autoitDriver).click();
 		webDriver.get("http://www.httpwatch.com/httpgallery/authentication/");
 		Thread.sleep(1000);
