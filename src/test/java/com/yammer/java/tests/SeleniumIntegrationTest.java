@@ -46,7 +46,7 @@ public class SeleniumIntegrationTest {
     Thread.sleep(5000);
     autoitDriver.switchTo().window("Sign in to your account");
     Thread.sleep(500);
-    autoitDriver.switchTo().window("AutoIt3");
+    autoitDriver.findElement(By.linkText("Maximize"));
     Thread.sleep(5000);
     webDriver.get("http://www.httpwatch.com/httpgallery/authentication/");
     webDriver.findElement(By.id("displayImage")).click(); // trigger the popup
