@@ -45,7 +45,9 @@ public class SeleniumIntegrationTest {
     webDriver.get("https://yammer.com/epam.com");
     Thread.sleep(5000);
     autoitDriver.switchTo().window("Sign in to your account");
-    Thread.sleep(10000);
+    Thread.sleep(500);
+    autoitDriver.switchTo().window("AutoIt3");
+    Thread.sleep(5000);
     webDriver.get("http://www.httpwatch.com/httpgallery/authentication/");
     webDriver.findElement(By.id("displayImage")).click(); // trigger the popup
     Thread.sleep(1000); // wait for popup to appear
